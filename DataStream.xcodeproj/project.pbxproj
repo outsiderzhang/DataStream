@@ -13,6 +13,11 @@
 		2215E9D320955A6C00E42194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2215E9D220955A6C00E42194 /* Assets.xcassets */; };
 		2215E9D620955A6C00E42194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2215E9D420955A6C00E42194 /* LaunchScreen.storyboard */; };
 		2215E9D920955A6C00E42194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9D820955A6C00E42194 /* main.m */; };
+		2215E9E120955AC300E42194 /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E020955AC300E42194 /* InputStream.m */; };
+		2215E9E420955AE600E42194 /* OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E320955AE600E42194 /* OutputStream.m */; };
+		2215E9E72095B73800E42194 /* SocketByteBuf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E62095B73800E42194 /* SocketByteBuf.m */; };
+		22B03924209ABB3800A8C9C3 /* SJSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */; };
+		22B1ECC92099AD4E00D614F1 /* SJSocketByteBuf.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1ECC82099AD4E00D614F1 /* SJSocketByteBuf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		2215E9D520955A6C00E42194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2215E9D720955A6C00E42194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2215E9D820955A6C00E42194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2215E9DF20955AC300E42194 /* InputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputStream.h; sourceTree = "<group>"; };
+		2215E9E020955AC300E42194 /* InputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputStream.m; sourceTree = "<group>"; };
+		2215E9E220955AE600E42194 /* OutputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputStream.h; sourceTree = "<group>"; };
+		2215E9E320955AE600E42194 /* OutputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputStream.m; sourceTree = "<group>"; };
+		2215E9E52095B73800E42194 /* SocketByteBuf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketByteBuf.h; sourceTree = "<group>"; };
+		2215E9E62095B73800E42194 /* SocketByteBuf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketByteBuf.m; sourceTree = "<group>"; };
+		22B03922209ABB3800A8C9C3 /* SJSocketPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketPacket.h; sourceTree = "<group>"; };
+		22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketPacket.m; sourceTree = "<group>"; };
+		22B03925209ABDCE00A8C9C3 /* SJSocketPacketType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketPacketType.h; sourceTree = "<group>"; };
+		22B1ECC72099AD4E00D614F1 /* SJSocketByteBuf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketByteBuf.h; sourceTree = "<group>"; };
+		22B1ECC82099AD4E00D614F1 /* SJSocketByteBuf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketByteBuf.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,17 @@
 				2215E9CA20955A6300E42194 /* AppDelegate.m */,
 				2215E9CC20955A6300E42194 /* ViewController.h */,
 				2215E9CD20955A6300E42194 /* ViewController.m */,
+				2215E9DF20955AC300E42194 /* InputStream.h */,
+				2215E9E020955AC300E42194 /* InputStream.m */,
+				2215E9E220955AE600E42194 /* OutputStream.h */,
+				2215E9E320955AE600E42194 /* OutputStream.m */,
+				2215E9E52095B73800E42194 /* SocketByteBuf.h */,
+				2215E9E62095B73800E42194 /* SocketByteBuf.m */,
+				22B1ECC72099AD4E00D614F1 /* SJSocketByteBuf.h */,
+				22B1ECC82099AD4E00D614F1 /* SJSocketByteBuf.m */,
+				22B03922209ABB3800A8C9C3 /* SJSocketPacket.h */,
+				22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */,
+				22B03925209ABDCE00A8C9C3 /* SJSocketPacketType.h */,
 				2215E9CF20955A6300E42194 /* Main.storyboard */,
 				2215E9D220955A6C00E42194 /* Assets.xcassets */,
 				2215E9D420955A6C00E42194 /* LaunchScreen.storyboard */,
@@ -141,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2215E9E72095B73800E42194 /* SocketByteBuf.m in Sources */,
+				22B03924209ABB3800A8C9C3 /* SJSocketPacket.m in Sources */,
+				2215E9E120955AC300E42194 /* InputStream.m in Sources */,
+				22B1ECC92099AD4E00D614F1 /* SJSocketByteBuf.m in Sources */,
 				2215E9CE20955A6300E42194 /* ViewController.m in Sources */,
 				2215E9D920955A6C00E42194 /* main.m in Sources */,
 				2215E9CB20955A6300E42194 /* AppDelegate.m in Sources */,
+				2215E9E420955AE600E42194 /* OutputStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DataStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.DataStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,7 +333,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DataStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.DataStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
