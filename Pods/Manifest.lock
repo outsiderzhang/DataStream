@@ -1,0 +1,20 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - MJExtension (3.0.13)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.6.2)
+  - MJExtension (~> 3.0.13)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaAsyncSocket
+    - MJExtension
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+
+PODFILE CHECKSUM: 396e3d0d203669be54dcd3f565b9c6adcdc65c5e
+
+COCOAPODS: 1.5.0

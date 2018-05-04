@@ -16,11 +16,15 @@
 		2215E9E120955AC300E42194 /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E020955AC300E42194 /* InputStream.m */; };
 		2215E9E420955AE600E42194 /* OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E320955AE600E42194 /* OutputStream.m */; };
 		2215E9E72095B73800E42194 /* SocketByteBuf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2215E9E62095B73800E42194 /* SocketByteBuf.m */; };
+		22627D56209C24D4005D304A /* SJSocketConnectParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 22627D55209C24D4005D304A /* SJSocketConnectParam.m */; };
+		22627D59209C2642005D304A /* SJSocketConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22627D58209C2642005D304A /* SJSocketConnect.m */; };
 		22B03924209ABB3800A8C9C3 /* SJSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */; };
 		22B1ECC92099AD4E00D614F1 /* SJSocketByteBuf.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1ECC82099AD4E00D614F1 /* SJSocketByteBuf.m */; };
+		4E9DC70FB2C040777E4F2660 /* libPods-DataStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB59753C02906C3AB350442 /* libPods-DataStream.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1017C270EC03EA9A508F24EB /* Pods-DataStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataStream/Pods-DataStream.debug.xcconfig"; sourceTree = "<group>"; };
 		2215E9C620955A6300E42194 /* DataStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2215E9C920955A6300E42194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2215E9CA20955A6300E42194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,11 +41,19 @@
 		2215E9E320955AE600E42194 /* OutputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputStream.m; sourceTree = "<group>"; };
 		2215E9E52095B73800E42194 /* SocketByteBuf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketByteBuf.h; sourceTree = "<group>"; };
 		2215E9E62095B73800E42194 /* SocketByteBuf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketByteBuf.m; sourceTree = "<group>"; };
+		22627D54209C24D4005D304A /* SJSocketConnectParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketConnectParam.h; sourceTree = "<group>"; };
+		22627D55209C24D4005D304A /* SJSocketConnectParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketConnectParam.m; sourceTree = "<group>"; };
+		22627D57209C2642005D304A /* SJSocketConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketConnect.h; sourceTree = "<group>"; };
+		22627D58209C2642005D304A /* SJSocketConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketConnect.m; sourceTree = "<group>"; };
+		22627D5A209C2722005D304A /* SJSocketConnectDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketConnectDelegate.h; sourceTree = "<group>"; };
+		22627D5B209C382C005D304A /* SJSocketMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketMacros.h; sourceTree = "<group>"; };
 		22B03922209ABB3800A8C9C3 /* SJSocketPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketPacket.h; sourceTree = "<group>"; };
 		22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketPacket.m; sourceTree = "<group>"; };
 		22B03925209ABDCE00A8C9C3 /* SJSocketPacketType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketPacketType.h; sourceTree = "<group>"; };
 		22B1ECC72099AD4E00D614F1 /* SJSocketByteBuf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSocketByteBuf.h; sourceTree = "<group>"; };
 		22B1ECC82099AD4E00D614F1 /* SJSocketByteBuf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSocketByteBuf.m; sourceTree = "<group>"; };
+		5EB59753C02906C3AB350442 /* libPods-DataStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59FEED8C2D25E7C4A99CE25 /* Pods-DataStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStream/Pods-DataStream.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9DC70FB2C040777E4F2660 /* libPods-DataStream.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,8 @@
 			children = (
 				2215E9C820955A6300E42194 /* DataStream */,
 				2215E9C720955A6300E42194 /* Products */,
+				D1956D4D9EF24639BCDC19AF /* Pods */,
+				6312BCF9C8664A3E0373BA61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +104,12 @@
 				22B03922209ABB3800A8C9C3 /* SJSocketPacket.h */,
 				22B03923209ABB3800A8C9C3 /* SJSocketPacket.m */,
 				22B03925209ABDCE00A8C9C3 /* SJSocketPacketType.h */,
+				22627D54209C24D4005D304A /* SJSocketConnectParam.h */,
+				22627D55209C24D4005D304A /* SJSocketConnectParam.m */,
+				22627D5A209C2722005D304A /* SJSocketConnectDelegate.h */,
+				22627D57209C2642005D304A /* SJSocketConnect.h */,
+				22627D58209C2642005D304A /* SJSocketConnect.m */,
+				22627D5B209C382C005D304A /* SJSocketMacros.h */,
 				2215E9CF20955A6300E42194 /* Main.storyboard */,
 				2215E9D220955A6C00E42194 /* Assets.xcassets */,
 				2215E9D420955A6C00E42194 /* LaunchScreen.storyboard */,
@@ -98,6 +119,23 @@
 			path = DataStream;
 			sourceTree = "<group>";
 		};
+		6312BCF9C8664A3E0373BA61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EB59753C02906C3AB350442 /* libPods-DataStream.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1956D4D9EF24639BCDC19AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1017C270EC03EA9A508F24EB /* Pods-DataStream.debug.xcconfig */,
+				F59FEED8C2D25E7C4A99CE25 /* Pods-DataStream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2215E9DC20955A6C00E42194 /* Build configuration list for PBXNativeTarget "DataStream" */;
 			buildPhases = (
+				34B9AAAAB2A88EA7F9BB6945 /* [CP] Check Pods Manifest.lock */,
 				2215E9C220955A6300E42194 /* Sources */,
 				2215E9C320955A6300E42194 /* Frameworks */,
 				2215E9C420955A6300E42194 /* Resources */,
@@ -163,6 +202,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34B9AAAAB2A88EA7F9BB6945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2215E9C220955A6300E42194 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -170,8 +230,10 @@
 			files = (
 				2215E9E72095B73800E42194 /* SocketByteBuf.m in Sources */,
 				22B03924209ABB3800A8C9C3 /* SJSocketPacket.m in Sources */,
+				22627D59209C2642005D304A /* SJSocketConnect.m in Sources */,
 				2215E9E120955AC300E42194 /* InputStream.m in Sources */,
 				22B1ECC92099AD4E00D614F1 /* SJSocketByteBuf.m in Sources */,
+				22627D56209C24D4005D304A /* SJSocketConnectParam.m in Sources */,
 				2215E9CE20955A6300E42194 /* ViewController.m in Sources */,
 				2215E9D920955A6C00E42194 /* main.m in Sources */,
 				2215E9CB20955A6300E42194 /* AppDelegate.m in Sources */,
@@ -313,6 +375,7 @@
 		};
 		2215E9DD20955A6C00E42194 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1017C270EC03EA9A508F24EB /* Pods-DataStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -331,6 +394,7 @@
 		};
 		2215E9DE20955A6C00E42194 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59FEED8C2D25E7C4A99CE25 /* Pods-DataStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

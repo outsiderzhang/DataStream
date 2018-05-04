@@ -57,12 +57,20 @@
 - (instancetype)initWithData:(NSData *)data
 {
     if (self = [super init]) {
+        
+        //根据接受数据初始化数据包
         self.packetByte = [[SJSocketByteBuf alloc] initWithData:data];
+        
+        //获取数据包类型
         self.packetType = [self.packetByte readInt8:0];
         
+        //判断数据有效性
         if (data.length > BYTES_HEAD) {//包含数据包
+            //获取数据包长度
             int16_t len = [self.packetByte readInt16FromInt8];
+            
             if (len + BYTES_HEAD <= data.length) {//数据包完整验证
+                //获取数据包
                 self.data = [self.packetByte readData:BYTES_HEAD length:len];
             }
         }

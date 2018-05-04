@@ -53,19 +53,20 @@ static NSInteger IntLength      =       4;
 static NSInteger LongLength     =       8;
 
 @implementation SJSocketByteBuf (NSInteger)
-
-//int16_t(2byte) 转成 2个int8_t(1byte) 写入缓存池
+#pragma mark -- byte(消息类型)    Byte[2](消息长度)    Byte[]消息内容
+//写入缓存池 消息长度 int16_t(2byte) 转成 2个int8_t(1byte)
 - (void)writeInt8WithInt16:(int16_t)int16
 {
     int8_t len[2];
-    len[0] = (int16 & 0xff) >> 8;
-    len[1] = (int16 & 0xff);
+    len[0] = (int16 & 0xff);
+    len[1] = (int16 & 0xff) >> 8;
     [_buffer appendBytes:len length:2];
 }
 
-//读取缓存池 2个int8_t(1byte) 转成 int16_t(2byte)
+//读取缓存池 获取消息长度 2个int8_t(1byte) 转成 int16_t(2byte)
 - (int16_t)readInt16FromInt8
 {
+    //index:1 length:2
     NSAssert(3 <= _buffer.length, @"index > _buffer.length");
     int8_t len[2];
     [_buffer getBytes:len range:NSMakeRange(1, 2)];

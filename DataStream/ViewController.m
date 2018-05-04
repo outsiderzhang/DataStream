@@ -36,18 +36,18 @@
     
     //消息类型
     Byte type[1];
-    type[0] = 4;
-    
+    type[0] = 0;
+
     //消息长度
     Byte len[2];
     len[0] = (Byte)(2 & 0xff);
     len[1] = (Byte)((2 >> 8) & 0xff);
-    
+
     //消息内容
     Byte content[2];
     content[0] = 52;
     content[1] = 43;
-    
+
     //组装
     NSMutableData *heart = [[NSMutableData alloc] init];
     [heart appendBytes:type length:1];
@@ -55,8 +55,18 @@
     [heart appendBytes:content length:2];
     NSLog(@"心跳:%@", heart);
     
-    SJDownstreamPacket *downStream = [[SJDownstreamPacket alloc] initWithData:heart];
-    NSLog(@"type:%d data:%@", downStream.packetType, downStream.data);
+    
+    int8_t heartbeat[2];
+    heartbeat[0] = 52;
+    heartbeat[1] = 43;
+    NSData *testHeart = [NSData dataWithBytes:heartbeat length:2];
+    
+    SJUpstreamPacket *upstream = [[SJUpstreamPacket alloc] initWithPacketType:SJSocketPacketHeartReply data:testHeart];
+    NSLog(@"type:%lu data:%@", (unsigned long)upstream.packetType, upstream.packetByte);
+    
+    
+    SJDownstreamPacket *downStream = [[SJDownstreamPacket alloc] initWithData:[upstream.packetByte data]];
+    NSLog(@"type:%lu data:%@", (unsigned long)downStream.packetType, downStream.data);
     
 //    NSString *string = @"123";
 //    int16_t bytes[2];
